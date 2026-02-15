@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    transition: 0.4s ease;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid white;
+}
+
+.name {
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #0b32b4;
+}
+
+.status {
+    color: #777;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.theme-btn {
+    margin-top: 25px;
+    padding: 10px 15px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: #555;
+}
+body.dark {
+    background: linear-gradient(135deg, #1f1f1f, #2c3e50);
+}
+
+body.dark .card {
+    background: rgba(30, 30, 30, 0.9);
+    color: white;
+}
+
+body.dark .status {
+    color: #ccc;
+}
+
+body.dark .btn {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
